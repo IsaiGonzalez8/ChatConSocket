@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>Chat</title>
+        <link rel = "stylesheet" href = "./assets/styles/normalize.css">
+        <link rel = "stylesheet" href = "./assets/styles/app.css">
+    </head>
+    <body>
+        <div class="grid-container" >
+            <div class = "conectedUsersArea">
+                <h2>Usuarios en linea</h2>
+                <ul class="conectedUsers"></ul>
+            </div>
+            <div>
+                <ul class = "screens">
+                    <li class = "chat-screen screen">
+                        <div class = "chatArea">
+                            <ul class = "messages"></ul>
+                        </div>
+                        <input class="inputMessage" placeholder="Enviar Mensaje"/>
+                        <input class="photoInput" type="file"  accept="image/png, image/jpeg" hidden/>
+                        <div class="buttons">
+                            <button class="photoButton"> <img src="./assets/img/expediente.png" alt=""> </button>
+                            <button class="inputMessageButton"> <img src="./assets/img/send.png" alt=""> </button>
+                        </div>
+                    </li>
+    
+                    <li class = "login-screen screen">
+                    <div class = "form">
+                        <h1 class="title">STORM-CHAT</h1>
+                        <input class = "usernameInput" placeholder = "Ingresa tu nombre" type = "text" maxlength = "14" />
+                        <button class = "usernameButton">Registrarme</button>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+
+
+        <script src = "/socket.io/socket.io.js"></script>
+        <script src = "./assets/js/main.js" ></script>
+    </body>
+</html>

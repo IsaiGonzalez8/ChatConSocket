@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+html, input {
+  font-family:
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    "Lucida Grande",
+    sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color:#67abf9;
+}
+
+ul {
+  list-style: none;
+  word-wrap: break-word;
+}
+
+/* Pages */
+
+.screens {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.screen {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+
+}
+.login-screen{
+  background-color: #67abf9;
+}
+  .login-screen .form {
+    height: 200px;
+    margin-top: -100px;
+    position: absolute;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    top: 50%;
+    width: 30%;
+    margin-left: 34%;
+    font-family: Montserrat;
+    background-color: white;
+  }
+  .usernameButton{
+    margin-top: 3%;
+    border-radius: 3px;
+    border: none;
+    width: 120px;
+    height: 30px;
+    font-family: Montserrat;
+  }
+  .login-screen .form .usernameInput {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    padding-bottom: 15px;
+    text-align: center;
+    width: 400px;
+  }
+  
+  .login-screen .title {
+    font-size: 200%;
+  }
+  
+  .login-screen .usernameInput {
+    font-size: 200%;
+    letter-spacing: 3px;
+  }
+  .login-screen .usernameInput::placeholder {
+    font-family: Montserrat;
+  }
+  
+  .login-screen .title, .login-screen .usernameInput {
+    color: black;
+    font-weight: 100;
+  }
+
+  /* Chat page */
+
+.chat-screen {
+  display: none;
+  width: 60%;
+}
+
+/* Font */
+
+.messages {
+  font-size: 150%;
+}
+
+.log {
+  color: gray;
+  font-size: 70%;
+  margin: 5px;
+  text-align: center;
+}
+
+/* Messages */
+
+.chatArea {
+  height: 60%;
+  width: 509px;
+  background-color: white;
+  margin-top: 10%;
+}
+
+.messages {
+  height: 110%;
+  padding: 10px 20px 10px 20px;
+  border: none;
+}
+
+.username {
+  font-weight: 700;
+  overflow: hidden;
+  padding-right: 15px;
+  text-align: right;
+}
+
+/* Input */
+
+.inputMessage {
+  border: none;
+  height: 50px;
+  left: 0;
+  outline: none;
+  padding-left: 10px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 40%;
+}
+
+.conectedUsersArea{
+  float: right;
+  width: 500px;
+  border-radius: 2px;
+  margin-left: 10px;
+}
+  
+.grid-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 4%;
+}
+
+.conectedUsersArea h2{
+  font-weight: 700;
+  font-size: 2rem;
+  color: white;
+  font-family: Montserrat;
+  padding-left: 10px;
+}
+
+.buttons {
+  position: absolute;
+  margin-left: 41%;
+}
+.conectedUsersArea ul{
+  background: white;
+  padding: 4px;
+  width: 300px;
+}
+.buttons button{
+  height: 50px;
+  width: 70px;
+  margin-top: 7px;
+}
+.chat{
+  margin: 0;
+}
+
+.photoButton{
+  border-radius: 3px;
+  border: none;
+  width: 120px;
+  height: 30px;
+  font-family: Montserrat;
+  background-color: white;
+}
+
+.inputMessageButton{
+  border-radius: 3px;
+  border: none;
+  width: 120px;
+  height: 30px;
+  font-family: Montserrat;
+  background-color: white;
+}
+.inputMessage{
+  border-radius: 3px;
+  margin-top: 20%;
+}
+
+.photoButton img{
+  height: 30px;
+  width: 30px;
+}
+
+.inputMessageButton img{
+  height: 30px;
+  width: 30px;
+}
+
+.buttons{
+  margin-top: .1%;
+}
