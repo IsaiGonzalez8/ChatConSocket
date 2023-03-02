@@ -91,5 +91,4 @@ photoInput.addEventListener('change', (e)=>{
         DataURL = reader.result
     };
     reader.readAsDataURL(file);
-    DataURL ? alert('Foto Adjuntada') : alert('Adjunte una vez mas para confirmar');
 })
